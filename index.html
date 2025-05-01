@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Sidebar with Topbar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Top Navigation Bar -->
+      <nav class="topbar">
+        <div class="topbar-left">
+          <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+          </button>
+          <h1 class="logo">Dashboard</h1>
+        </div>
+        <div class="topbar-right">
+          <div class="search-box">
+            <input type="text" placeholder="Search..." />
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <span class="toggle-ball"></span>
+          </div>
+          <div class="user-profile" id="userProfile">
+            <div class="profile-trigger">
+              <img src="gentleman_with_a_strong_jawline.jpg" alt="User" />
+              <span>User Name</span>
+              <i class="fa-solid fa-angle-down dropdown-icon"></i>
+            </div>
+            <div class="profile-dropdown">
+              <a href="#"><i class="fa-solid fa-gear"></i> Settings</a>
+              <a href="#"
+                ><i class="fa-solid fa-envelope"></i> Messages
+                <span class="badge">3</span></a
+              >
+              <div class="dropdown-divider"></div>
+              <a href="#"
+                ><i class="fa-solid fa-right-from-bracket"></i> Logout</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Sidebar Navigation -->
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-menu">
+          <div class="sidebar-header">
+            <img src="C letter.jpg" alt="Logo" class="sidebar-logo" />
+            <span>Admin Panel</span>
+          </div>
+          <ul class="menu-items">
+            <li class="menu-item active">
+              <a href="#">
+                <i class="fa-solid fa-house"></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li class="menu-item has-submenu">
+              <a href="#">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Products</span>
+                <i class="fa-solid fa-angle-down dropdown-icon"></i>
+              </a>
+              <ul class="submenu">
+                <li><a href="#">All Products</a></li>
+                <li><a href="#">Add New</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Inventory</a></li>
+              </ul>
+            </li>
+            <li class="menu-item has-submenu">
+              <a href="#">
+                <i class="fa-solid fa-users"></i>
+                <span>Users</span>
+                <i class="fa-solid fa-angle-down dropdown-icon"></i>
+              </a>
+              <ul class="submenu">
+                <li><a href="#">All Users</a></li>
+                <li><a href="#">Add New</a></li>
+                <li><a href="#">Roles</a></li>
+                <li><a href="#">Permissions</a></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="#">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Analytics</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Messages</span>
+                <span class="badge">5</span>
+              </a>
+            </li>
+            <li class="menu-item has-submenu">
+              <a href="#">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+                <i class="fa-solid fa-angle-down dropdown-icon"></i>
+              </a>
+              <ul class="submenu">
+                <li><a href="#">General</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Notifications</a></li>
+                <li><a href="#">Appearance</a></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="#">
+                <i class="fa-solid fa-circle-question"></i>
+                <span>Help</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content" id="mainContent">
+        <div class="content-header">
+          <h2>Welcome to your Dashboard</h2>
+          <p>Manage your content and settings from here</p>
+        </div>
+        <div class="content-body">
+          <div class="card">
+            <h3>Recent Activity</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="card">
+            <h3>Statistics</h3>
+            <p>
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Quick Actions</h3>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
